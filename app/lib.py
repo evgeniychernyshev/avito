@@ -15,11 +15,12 @@ def add_flat(container, flat):
 
 
 def search_flats_by_district(container, search):
-    search_lowercased = search.strip().lower()
     result = []
-    for flat in container:
-        if search_lowercased == flat['district'].lower():
-            result.append(flat)
+    for dist in search:
+        search_lowercased = dist.strip().lower()
+        for flat in container:
+            if search_lowercased == flat['district'].lower():
+                result.append(flat)
 
     return result
 

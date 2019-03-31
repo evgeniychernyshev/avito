@@ -48,8 +48,8 @@ flats = add_flat(flats, flat_3)
 flats = add_flat(flats, flat_4)
 flats = add_flat(flats, flat_5)
 
-print(search_flats_by_district(flats, 'авиастроительный'))
-print(search_flats_by_district(flats, 'вахитовский'))
+print(search_flats_by_district(flats, ['авиастроительный', 'ново-савиновский']))
+print(search_flats_by_district(flats, ['вахитовский']))
 
 print(search_flat_by_price(flats, 20_000))
 print(search_flat_by_price(flats, 15_000))
