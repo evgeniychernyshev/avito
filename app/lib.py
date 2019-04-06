@@ -25,7 +25,7 @@ def search_flats_by_district(container, search):
     return result
 
 
-def search_flat_by_price(container, price):
+def search_flats_by_price(container, price):
     result = []
     for flat in container:
         if price >= flat['price']:

@@ -1,4 +1,4 @@
-from app.lib import create_flat, add_flat, search_flats_by_district, search_flat_by_price
+from app.lib import create_flat, add_flat, search_flats_by_district, search_flats_by_price
 
 flats = []
 
@@ -51,6 +51,6 @@ flats = add_flat(flats, flat_5)
 print(search_flats_by_district(flats, ['авиастроительный', 'ново-савиновский']))
 print(search_flats_by_district(flats, ['вахитовский']))
 
-print(search_flat_by_price(flats, 20_000))
-print(search_flat_by_price(flats, 15_000))
-print(search_flat_by_price(flats, 9_000))
+print(search_flats_by_price(flats, 20_000))
+print(search_flats_by_price(flats, 15_000))
+print(search_flats_by_price(flats, 9_000))
